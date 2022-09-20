@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'View/photo_view.dart';
 import 'View/post_view.dart';
+import 'View/user_detail_withought_model.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Flutter Demo',
-      home: UserDetailsView(),
+      home: UserDetailsWithoutModel(),
     );
   }
 }
