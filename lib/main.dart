@@ -1,6 +1,8 @@
+import 'package:api_with_provider/View/userdetails.dart';
 import 'package:flutter/material.dart';
 
-import 'home_view.dart';
+import 'View/photo_view.dart';
+import 'View/post_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,10 +14,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Flutter Demo',
-      home: const HomeView(),
+      home: UserDetailsView(),
     );
   }
 }
-
