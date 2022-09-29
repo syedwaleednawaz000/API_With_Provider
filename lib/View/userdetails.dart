@@ -32,7 +32,7 @@ class _UserDetailsViewState extends State<UserDetailsView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("USer data"),
+        title: const Text("User data"),
         centerTitle: true,
       ),
       body: Column(
@@ -57,13 +57,13 @@ class _UserDetailsViewState extends State<UserDetailsView> {
                                 ));
                           });
                     } else if (snapshot.hasError) {
-                      return Center(
+                      return const Center(
                         child: Icon(Icons.error),
                       );
                     } else if (!snapshot.hasData) {
                       return CircularProgressIndicator();
                     } else {
-                      return Text("No internet");
+                      return const Text("No internet");
                     }
                   }))
         ],

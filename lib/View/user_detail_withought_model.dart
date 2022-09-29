@@ -16,6 +16,7 @@ class _UserDetailsWithoutModelState extends State<UserDetailsWithoutModel> {
 
   Future<void> getUserData() async {
     final response =
+        // https://api.chucknorris.io/jokes/categories
         await http.get(Uri.parse("https://jsonplaceholder.typicode.com/users"));
     if (response.statusCode == 200) {
       data = jsonDecode(response.body);
