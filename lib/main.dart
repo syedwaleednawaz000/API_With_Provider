@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Flutter Demo',
+      // use material app or GetAaterilaApp
       home: LogInView(),
     );
   }
