@@ -1,10 +1,5 @@
-import 'package:api_with_provider/View/userdetails.dart';
 import 'package:flutter/material.dart';
-
 import 'View/login_view.dart';
-import 'View/photo_view.dart';
-import 'View/post_view.dart';
-import 'View/user_detail_withought_model.dart';
 
 void main() {
   runApp(const MyApp());
